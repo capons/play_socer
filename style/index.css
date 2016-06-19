@@ -1,0 +1,342 @@
+html {
+    font-family: roboto;
+}
+body {
+    margin: 0px;
+    min-width: 1000px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active {
+    color: rgba(40, 122, 255, 1);
+}
+ul li ul.dropdown{
+    min-width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.auth {
+    display: inline-block;
+    position: fixed;
+    width: 50%;
+    text-align: center;
+    left: 50%;
+    margin-left: -25%;
+    top:30%;
+}
+#look {
+    height: 50px;
+}
+#b_look {
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: roboto;
+    color: rgba(56, 42, 255, 1);
+    border: 2px solid white;
+}
+#b_look:hover {
+    border: 2px solid rgb(56, 42, 255);
+}
+#b_look-t {
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: roboto;
+    color: rgba(56, 42, 255, 1);
+    border: 2px solid white;
+}
+#b_look-t:hover {
+    border: 2px solid rgb(56, 42, 255);
+}
+#vk {
+    height: 25px;
+}
+.text-c {
+    color: rgba(56, 42, 255, 1);
+    text-decoration: none;
+}
+input, textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+.form-i {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.f-span {
+    display: inline-block;
+    width: 35%;
+    text-align: right;
+}
+.f-input {
+    display:inline-block;
+    width: 63%;
+    text-align: left;
+}
+.f-input.p-cent {
+    position: relative;
+    bottom: 7px;
+}
+.error-b {
+    width: 60%;
+    margin: 0px auto;
+    height: 50px;
+    display: table;
+    background-color: bisque;
+    text-align: center;
+}
+#l-bottom {
+    height: 48px;
+    border: medium none;
+    background-color: inherit;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-family: roboto;
+}
+/*registration view*/
+#r_look {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: roboto;
+    color: rgba(56, 42, 255, 1);
+    margin-left: 35px;
+}
+
+/* hide the input form - for upload image - to change to another */
+#upfile {
+    display: none;
+}
+/* button to upload file */
+#btn {
+    width: 120px;
+    height: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow:
+            0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+            inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+            inset 0 3px rgba(255,255,255,0.2), /* Top Light Shadow */
+            inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+            inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+}
+/*decoration button */
+#btn:hover {
+    opacity: 0.7;
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    color:black;
+}
+.text-c.im {
+    position: relative;
+    bottom: 12px;
+}
+/* ./registration view*/
+/* creatTournament*/
+.c-t-full-w {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.c-t-head {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.half-center {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+.form-full {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.f-span-f {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+.f-input-f {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+}
+.c-full-w {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+.b-top {
+    border-top:2px solid rgba(227, 188, 255, 0.6) ;
+}
+.f-span-top {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.t-c-b {
+    width: 24%;
+    position: relative;
+    display: inline-block;
+}
+.t-c-b-b {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+#b_look_t {
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: roboto;
+    color: rgba(56, 42, 255, 1);
+    width: 100%;
+    border: 2px solid white;
+    padding: 15px
+}
+#b_look_t:hover {
+    border: 2px solid rgb(56, 42, 255);
+}
+.half {
+    width: 50%;
+    float: left;
+    display: inline-block;
+
+
+}
+.c-t-head-t {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.b-right {
+    border-right: 2px solid rgba(227, 188, 255, 0.6);
+}
+.l-border {
+    border-left: 2px solid rgba(227, 188, 255, 0.6);
+
+}
+.t-border {
+    border-top: 2px solid rgba(227, 188, 255, 0.6);
+}
+.tour-block {
+    min-height: 500px;
+}
+.s-padding {
+    padding: 5px;
+}
+#b_look-t-p {
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: roboto;
+    color: rgba(56, 42, 255, 1);
+    border: 2px solid white;
+}
+#b_look-t-p:hover {
+    border: 2px solid rgb(56, 42, 255);
+}
+#b_look_t-t-t {
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: roboto;
+    color: rgba(56, 42, 255, 1);
+    width: 100%;
+    border: 2px solid white;
+    padding: 15px;
+}
+#b_look_t-t-t:hover {
+    border: 2px solid rgb(56, 42, 255);
+}
+
+/* ./creatTournament*/
+.h-title-wraper {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.h-title-body {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.tour-link {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.border-bb {
+    width: 100%;
+    float: left;
+    border-bottom: 2px solid rgba(227, 188, 255, 0.6);
+    margin-bottom: 40px;
+}
+.t-head {
+    width: 100%;float: left
+}
+.t-col-one {
+    width: 10%;float: left;padding: 10px
+}
+.t-col {
+    width: 20%;float: left;padding: 10px
+}
